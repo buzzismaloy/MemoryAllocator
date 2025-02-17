@@ -159,8 +159,10 @@ void print_mem_list() {
 	printf("head = %p, tail = %p\n", (void*)head, (void*)tail);
 
 	while (curr) {
-		printf("Addr = %p, Size = %zu, Free = %u, next = %p\n", (void*)curr, curr->s.size,
-				curr->s.is_free, (void*)curr->s.next);
+		printf("Addr = %p, Size = %zu, Decimal block size = %zu, Hexadecimal block size = %x, Free = %u, next = %p\n",
+		(void*)curr, curr->s.size, sizeof(header_t) + curr->s.size,
+		sizeof(header_t) + curr->s.size, curr->s.is_free, (void*)curr->s.next);
+
 		curr = curr->s.next;
 	}
 }
