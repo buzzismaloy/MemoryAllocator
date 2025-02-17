@@ -34,7 +34,7 @@ header_t* get_free_block(size_t size) {
 
 void memfree(void* block) {
 	header_t* header;
-	header_t* temp;
+	header_t* tmp;
 	void* programbreak;
 
 	if (!block)
