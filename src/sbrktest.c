@@ -19,12 +19,12 @@ int main() {
 		printf("%d ", arr2[i]);
 	}
 	printf("\n\n");
-    print_mem_list(); // Отладочный вывод памяти
+    print_mem_list();
 
 	printf("\nMemory is freed\n");
     memfree(arr2);
 	memfree(arr);
-    print_mem_list(); // Проверка освобождения памяти
+    print_mem_list();
 
     return 0;
 }
