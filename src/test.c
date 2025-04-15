@@ -1,4 +1,4 @@
-#include "sbrkmemallocator.h"
+#include "memallocator.h"
 
 int main() {
     printf("=== TEST START ===\n");

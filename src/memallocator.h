@@ -92,7 +92,7 @@ void* memalloc(size_t size) {
 		return NULL;
 	}
 
-	header = block;
+	header = (header_t*)block;
 	header->s.size = size;
 	header->s.is_free = 0;
 	header->s.next = NULL;
