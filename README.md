@@ -1,6 +1,6 @@
 # Custom Memory allocator
 
-MemoryAllocators is a simple memory allocator that implements `malloc()`, `calloc()`, `realloc()` and `free()`.
+MemoryAllocator is a simple memory allocator that implements `malloc()`, `calloc()`, `realloc()` and `free()`.
 
 The file `memallocator.h` uses `sbrk()` to implement memory allocation functions.
 
